@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <form action="https://juntos-back-end.onrender.com/voluntarios" method="post">
+            <h1 class="titulo" id="titulo">Voluntariado</h1>
+            <p class="texto" id="descricao">Ajude ao próximo com suas habilidades, seja voluntário!</p>
+            <div class="info">
+                <label for="nome">*Nome: </label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="info">
+                <label for="sobrenome">*Sobrenome: </label>
+                <input type="text" id="sobrenome" name="sobrenome">
+            </div>
+            <div class="info">
+                <label for="nomeSocial">Nome social: </label>
+                <input type="text" id="nomeSocial" name="nomeSocial">
+            </div>
+            <div class="info">
+                <label for="idade">*Idade: </label>
+                <input type="number" name="idade" id="idade">
+            </div>
+            <div class="info">
+                <label for="area">*Área: </label>
+                <input type="text" id="area" name="area">
+            </div>
+            <div class="info">
+                <label for="estado">*Estado: </label>
+                <input type="text" id="estado" name="estado">
+            </div>
+            <div class="info">
+                <label for="cidade">*Cidade: </label>
+                <input type="text" id="cidade" name="cidade">
+            </div>
+            <div class="info">
+                <label for="sobre">Sobre: </label>
+                <textarea name="sobre" id="sobre"></textarea>
+            </div>
+            <div class="botao">
+                <button type="submit" id="cadastrar">Cadastrar</button>
+            </div>
+        </form>
+        <div id="resposta">
+            
+        </div>
+    </div>
+    <script src="js/post-voluntario.js"></script>
+</body>
+</html>
